@@ -1,6 +1,4 @@
-tflite
 streamlit
-
 h5py
 numpy
 pandas
@@ -9,4 +7,5 @@ pillow
 scikit-learn
 seaborn
 plotly
+keras
 

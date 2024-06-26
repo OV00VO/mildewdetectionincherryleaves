@@ -1,2 +1,2 @@
-tensorflow lite
+tflite
 streamlit

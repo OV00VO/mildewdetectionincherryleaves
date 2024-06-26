@@ -1,5 +1,2 @@
-numpy
-pandas
-matplotlib
 tensorflow-cpu
 streamlit

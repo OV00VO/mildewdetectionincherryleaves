@@ -1,2 +1,12 @@
 tflite
 streamlit
+
+h5py
+numpy
+pandas
+matplotlib
+pillow
+scikit-learn
+seaborn
+plotly
+

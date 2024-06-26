@@ -6,4 +6,3 @@ Pillow
 plotly
 seaborn
 streamlit
-tensorflow_cpu

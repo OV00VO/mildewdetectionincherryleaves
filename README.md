@@ -1,5 +1,5 @@
 
-# Cherry Leaf Mildew Analysis
+# Mildew Detection in Cherry Leaves
 This repository tackles cherry leaf mildew detection using a combination of data analysis and machine learning.
 
 ## Project Goals
@@ -68,4 +68,4 @@ Displays uploaded images with:
 * Visualizes the model's learning process (accuracy and loss over training epochs).
 * Summarizes model performance on the test set using metrics like accuracy, precision, recall, and F1-score.
 
-This design ensures a user-friendly and informative dashboard that meets the client's requirements and facilitates data exploration, model evaluation, and actionable insights generation.
+Overall, this design ensures a user-friendly and informative dashboard that meets the client's requirements and facilitates data exploration, model evaluation, and actionable insights generation.

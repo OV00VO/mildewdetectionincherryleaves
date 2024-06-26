@@ -2,12 +2,6 @@ h5py
 numpy
 pandas
 matplotlib
-pillow
-scikit-learn
 seaborn
 plotly
-streamlit
 tensorflow-cpu
-keras
-protobuf
-altair

@@ -2,6 +2,7 @@ joblib
 matplotlib
 numpy
 pandas
+Pillow
 seaborn
 streamlit
 tensorflow-cpu

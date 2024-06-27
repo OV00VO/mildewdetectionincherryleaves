@@ -73,3 +73,26 @@ Displays uploaded images with:
 * Summarizes model performance on the test set using metrics like accuracy, precision, recall, and F1-score.
 
 Overall, this design ensures a user-friendly and informative dashboard that meets the client's requirements and facilitates data exploration, model evaluation, and actionable insights generation.
+
+### Testing
+**Comprehensive Testing Ensures Accuracy:** To guarantee the reliability and functionality of the cherry leaf mildew detection project, comprehensive testing was undertaken.  Not only were all features rigorously evaluated within the Streamlit app environment, mirroring the intended user experience, but each step of the code was also manually tested in a Jupyter Notebook to validate its logic and performance. **Additionally, a crucial aspect of the testing process involved manually testing a diverse set of cherry leaf images**, ensuring the machine learning functions accurately classified both healthy and mildew-infected leaves.
+
+**Deployment Considerations:** While initial deployment attempts were made on Heroku, challenges arose due to the platform's soft limit of 300MB and hard limit of 500MB. The combined size of necessary packages, including Streamlit and TensorFlow-CPU, alongside project files, exceeded this limit. While Heroku support allowed a temporary increase to 600MB, it's important to note that this approach is not recommended for long-term use due to potential performance impacts. As a result, for similar machine learning projects with larger dependencies, deploying on alternative platforms designed for these needs is recommended.
+
+### Future Enhancements:
+**Automatic Photo Uploader:** Streamline the process by integrating an automatic photo uploader that allows users to directly capture and analyze cherry leaf images. This could be a mobile app or a web-based interface.
+
+**Advanced Machine Learning:** Explore deeper neural networks or ensemble learning techniques to potentially improve detection accuracy and robustness.
+
+**Severity Classification:** Extend the project beyond simple detection to identify the severity of mildew infection, providing valuable insights for treatment decisions.
+
+**Multi-Disease Detection:** Enhance the model's capabilities to identify other common cherry leaf diseases, offering a broader diagnostic tool for farmers and researchers.
+
+**Scalable Deployment:** Consider deploying the model as a RESTful API for integration with agricultural monitoring systems or other applications requiring mildew detection functionalities.
+
+By incorporating these features, the project can evolve into a powerful and versatile tool for managing cherry leaf health.
+
+
+### Credits
+Code Institute: All code used has been remodeled, restructured, or recreated specifically for this project. Foundational concepts and learning materials were sourced from Code Institute's Machine Learning course and it is structured according to the learning objective/goals. To be able to develop this project, while learning some basic code structures was left for its functionality of the app.  
+

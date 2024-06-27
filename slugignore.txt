@@ -5,4 +5,5 @@ inputs
 outputs
 src
 app_pages/__pycache__
-images_project/
+images_project
+workspace

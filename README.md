@@ -6,6 +6,10 @@ This repository tackles cherry leaf mildew detection using a combination of data
 * Develop data visualizations to differentiate healthy and mildewed cherry leaves.
 * Build a machine learning model to predict mildew presence in cherry leaf images.
 
+### Deployed APP on Heroku
+
+[Mildew Detection in Cherry Leaves](https://mildewdetectionincherryleaves-c24b4ea4a636.herokuapp.com/)
+
 ## How to Use This Repo
 1. Fork this repository on GitHub.
 2. Copy the HTTPS URL of your forked repository.
@@ -41,7 +45,7 @@ To save time, the IT team proposes an ML system that instantly detects mildew in
 A similar manual process exists for other crops. If successful, this project can be replicated for other crops. 
 The dataset consists of cherry leaf images provided by Farmy & Foods, taken from their crops.
 
-### Build a dashboard to detect mildew in cherry leaves based on the following business requirements:
+### User Stories: Build a dashboard to detect mildew in cherry leaves based on the following business requirements:
 * The client wants a visual study to differentiate healthy and mildewed cherry leaves.
 * The client wants to predict if a cherry leaf has mildew.
 

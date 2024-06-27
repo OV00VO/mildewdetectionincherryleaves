@@ -32,7 +32,7 @@ Use streamlit run app.py to launch the Streamlit dashboard.
 
 ### About the project:
 Marianne McGuinness, the head of IT and Innovation at Farmy & Foods, an agricultural company, is facing a challenge. 
-Their cherry plantations are affected by powdery mildew, a fungal disease harming various plants. 
+Their cherry plantations are affected by powdery mildew, a fungal disease harming various plants.
 Cherry crops are among their finest products, and the company is concerned about compromised quality. 
 Currently, employees manually inspect trees, spending 30 minutes per tree, taking leaf samples to visually identify mildew. 
 If mildew is present, they apply a specific compound (taking 1 minute). 
@@ -45,23 +45,23 @@ The dataset consists of cherry leaf images provided by Farmy & Foods, taken from
 * The client wants a visual study to differentiate healthy and mildewed cherry leaves.
 * The client wants to predict if a cherry leaf has mildew.
 
-### Page 2: Mildew Visualizer (for Business Requirement 1)
+### Page 2: Project Hypothesis and Validation
+* Explains the hypothesis for each business requirement.
+* Details the validation methods used.
+* Summarizes the validation results.
+
+### Page 3: Mildew Visualizer (for Business Requirement 1)
 * Provides checkboxes for visualizations:
 * Differences between average and standard deviation images (infected vs. uninfected).
 * Comparisons of average infected and uninfected leaf images.
 * Image montages for infected or uninfected leaves.
 
-### Page 3: Mildew Detector (for Business Requirement 2)
+### Page 4: Mildew Detector (for Business Requirement 2)
 Uploader for multiple cherry leaf images.
 
 Displays uploaded images with:
 * Prediction statements (presence/absence of mildew) and probabilities.
 * Summarizes results in a downloadable table.
-
-### Page 4: Project Hypothesis and Validation
-* Explains the hypothesis for each business requirement.
-* Details the validation methods used.
-* Summarizes the validation results.
 
 ### Page 5: ML Performance Metrics
 * Shows label frequencies (infected/uninfected) across datasets (training, validation, test).

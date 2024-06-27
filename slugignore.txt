@@ -8,3 +8,6 @@ app_pages/__pycache__
 images_project
 workspace
 jupyter_notebooks
+requirements_1
+requirements_2
+requirements_3

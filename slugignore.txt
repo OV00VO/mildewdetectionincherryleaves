@@ -7,3 +7,4 @@ src
 app_pages/__pycache__
 images_project
 workspace
+jupyter_notebooks

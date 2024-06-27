@@ -5,5 +5,4 @@ inputs
 outputs
 src
 app_pages/__pycache__
-jupyter_notebooks/
 images_project/

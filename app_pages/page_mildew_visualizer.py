@@ -16,7 +16,7 @@ def page_mildew_visualizer_body():
     st.write("### Mildew Visualizer")
     st.info(
         f"* The client is interested in having a study that visually "
-        f"differentiates a mildew infected leaf from an uninfected leaf.")
+        f"differentiates a mildew infected leaf from an uninfected cherry leaf.")
     
     version = 'v1'
     if st.checkbox("Difference between average and variability image"):
@@ -25,9 +25,9 @@ def page_mildew_visualizer_body():
       avg_uninfected = plt.imread(f"outputs/{version}/avg_var_healthy.png")
 
       st.warning(
-        f"* We notice the average and variability images did not show "
+        f"* By analysing these average and variability images, it resulted in finding visual "
         f"patterns where we could intuitively differentiate one from another. " 
-        f"However, a small difference in the colour pigment of the average images is seen for both labels.")
+        f"Moreover, there is a small difference in the colour pigment of the average images is seen for both cherry leaves.")
 
       st.image(avg_infected, caption='Mildew infected cherry leaf - Average and Variability')
       st.image(avg_uninfected, caption='Uninfected cherry leaf - Average and Variability')
@@ -37,7 +37,7 @@ def page_mildew_visualizer_body():
           diff_between_avgs = plt.imread(f"outputs/{version}/diff_avg_powdery_mildew_healthy.png")
 
           st.warning(
-            f"* We notice this study didn't show "
+            f"* In this study of the cherry leaves, it did show some small "
             f"patterns where we could intuitively differentiate one from another.")
           st.image(diff_between_avgs, caption='Difference between average images')
 

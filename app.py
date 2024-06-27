@@ -13,8 +13,8 @@ app = MultiPage(app_name="Mildew Detection in Cherry Leaves")
 
 app.add_page("Quick Project Summary", page_summary_body)
 app.add_page("Project Hypothesis", page_project_hypothesis_body)
-app.add_page("Cherry Leaf Mildew Detection", page_mildew_detector_body)
 app.add_page("Cherry Leaf Mildew Visualiser", page_mildew_visualizer_body)
+app.add_page("Cherry Leaf Mildew Detection", page_mildew_detector_body)
 app.add_page("ML Performance Metrics", page_ml_performance_metrics)
 
 app.run()

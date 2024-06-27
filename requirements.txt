@@ -1,4 +1,4 @@
-tflite
+tensorflow-cpu
 streamlit
 h5py
 numpy

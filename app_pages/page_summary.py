@@ -33,6 +33,7 @@ def page_summary_body():
         f"infected with mildew and uninfected with mildew, in a visually way.\n"
         f"* 2 - The client is also interested in telling whether a given leaf contains mildew on the cherry leaf or not. "
     )
+    
     image_dir = os.path.join(os.getcwd(), "images_project")
     col1, col2 = st.columns(2) 
     with col1:

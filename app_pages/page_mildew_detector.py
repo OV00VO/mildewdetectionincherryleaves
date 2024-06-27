@@ -2,6 +2,7 @@ import streamlit as st
 from PIL import Image
 import numpy as np
 import pandas as pd
+import os
 
 from src.data_management import download_dataframe_as_csv
 from src.machine_learning.predictive_analysis import (
@@ -25,15 +26,22 @@ def page_mildew_detector_body():
 
     st.write(
         f"* Download a set of infected and uninfected cherry leaves for live prediction. "
-        f"You can download the images from [here](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves)."
+        f"You can download the images from [here](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves).\n\n"
+        f"If you are in a hurry, you can use the images of cherry leaves below, just drag and drop them to the file uploader."
     )
-
+    
+    st.write("---")
+    image_dir = os.path.join(os.getcwd(), "images_project")
+    col1, col2 = st.columns(2) 
+    with col1:
+        st.image(f"{image_dir}/powdery_mildew.JPG", caption="Infected Leaf: Cherry Leaf - Powdery Mildew")
+    with col2:
+        st.image(f"{image_dir}/healthy.JPG", caption="Uninfected Leaf: Cherry Leaf - Healthy")
     st.write("---")
 
     images_buffer = st.file_uploader(
-        "Upload cherry leaf samples. You may select more than one.", type="jpg", accept_multiple_files=True
-    )
-    
+        "Upload cherry leaf samples. It is possible to select more than one, and run a batch of cherry leaf images if prefered.", type="jpg", accept_multiple_files=True)
+      
     st.info(    
         f"Struggling to keep up with powdery mildew in your cherry orchard??\n\n " 
         f"Manually checking every leaf takes ages! This project uses machine learning to analyze cherry leaf images for instant mildew detection.\n\n"

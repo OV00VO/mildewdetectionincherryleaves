@@ -8,3 +8,4 @@ pillow
 seaborn
 keras
 joblib
+plotly

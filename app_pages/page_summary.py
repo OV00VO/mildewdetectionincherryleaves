@@ -22,7 +22,7 @@ def page_summary_body():
     st.write("---")
     st.write(
         f"* For additional information, please **visit** and **read** the "
-        f"Project README.md file found here: \n\n[Cherry Leave Mold Detection Analysis](https://github.com/OV00VO/mildewdetectionincherryleaves/blob/main/README.md)\n"
+        f"Project README.md file found here: \n\n[Mildew Detection in Cherry Leaves](https://github.com/OV00VO/mildewdetectionincherryleaves/blob/main/README.md)\n"
         f"* For additional information about Cherry Leaf Mildew, please **visit** and **read** this on Wikipedia: \n\n"
         f"[Cherry leaf spot](https://en.wikipedia.org/wiki/Cherry_leaf_spot)"
     )

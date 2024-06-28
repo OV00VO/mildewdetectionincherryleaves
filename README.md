@@ -8,25 +8,78 @@
 ---
 ### About the Project: The Story Behind the Business Case
 Marianne McGuinness, the head of IT and Innovation at Farmy & Foods, an agricultural company, is facing a challenge. Their cherry plantations are affected by powdery mildew, a fungal disease harming various plants. Cherry crops are among their finest products, and the company is concerned about compromised quality. Currently, employees manually inspect trees, spending 30 minutes per tree, taking leaf samples to visually identify mildew. If mildew is present, they apply a specific compound (taking 1 minute). With thousands of trees across multiple farms, this manual process is not scalable due to the time it takes. To save time, the IT team proposes an ML system that instantly detects mildew in cherry leaf images. A similar manual process exists for other crops. If successful, this project can be replicated for other crops. The dataset consists of cherry leaf images provided by Farmy & Foods, taken from their crops.
+
 ## Challenge
+
 ### Tackling Cherry Leaf Mildew with Machine Learning
 Cherry leaf mildew, a fungal disease, poses a significant threat to cherry orchards, potentially reducing crop quality. Traditionally, farmers rely on manual inspection of vast orchards, a time-consuming and error-prone process. This inefficiency is particularly felt by companies like Farmy & Foods, which manage thousands of trees across multiple farms, spending 30 minutes per tree on visual inspection through leaf samples. This project tackles this critical challenge by presenting a solution that utilizes image analysis and machine learning (ML) for automated cherry leaf mildew detection. A user-friendly Streamlit dashboard serves as the interface for visualization and prediction, empowering cherry farmers with efficient crop management tools. This ML-powered approach offers significant benefits compared to traditional manual inspection, paving the way for improved farm efficiency and broader impact within the agricultural domain.
+
+---
+**Ethical and Privacy Considerations in Cherry Leaf Mildew Detection**
+While the Non Disclosure Agreement (NDA) protects Farmy & Foods' data confidentiality, ethical considerations go beyond just non-disclosure. 
+* **Data Security:** Ensurance of secure storage with access controls for authorized personnel onlym and data anonymization to further protect privacy.
+* **Data Usage:** Limit data usage to the agreed-upon purpose of training and evaluating the mildew detection model. Always be mindful of potential biases in the training data and strive for a diverse dataset.
+* **Transparency:** Explore ways to explain the model's decision-making process to farmers, enhancing user trust.
+* **User Control:** In deployment, farmers is allowed to opt-out of having their anonymized image data used for further model improvements.
+
+---
 ### User Stories: Build a dashboard to detect mildew in cherry leaves based on the following business requirements
 * The client wants a visual study to differentiate healthy and mildewed cherry leaves.
 * The client wants to predict if a cherry leaf has mildew.
+---
 
+### Epic: Develop a Machine Learning Model for Cherry Leaf Mildew Detection
+
+This epic encompasses the entire project of building a model to automate cherry leaf mildew detection.
+
+**User Stories (Information Gathering & Data Collection):**
+
+* As a farmer or data scientist, I want to gather information from Farmy & Foods about the characteristics of healthy and mildewed cherry leaves to guide data collection. (This ensures understanding of the problem and data needs)
+* As a farmer or data scientist, I want to define the data collection process for acquiring cherry leaf images, including both healthy and mildewed samples from Farmy & Foods' orchards. (This outlines the data acquisition strategy)
+
+**User Stories (Data Visualization, Cleaning & Preparation):**
+
+* **As a farmer or data scientist**, I want to visualize the collected cherry leaf images to identify patterns and potential challenges in differentiating healthy and mildewed leaves. (This aids in data exploration and understanding)
+* **As a data scientist**, I want to clean and pre-process the cherry leaf image data (e.g., resizing, normalization) to ensure it's suitable for training the machine learning model. (This ensures data quality for model training)
+
+**User Stories (Model Training, Optimization & Validation):**
+
+* **As a data scientist**, I want to train a Convolutional Neural Network (CNN) model on the prepared cherry leaf image data to predict the presence of mildew. (This focuses on model development)
+* **As a data scientist**, I want to optimize the CNN model's hyperparameters to achieve the best possible accuracy in detecting mildew. (This refines the model's performance)
+* **As a data scientist**, I want to evaluate the CNN model's performance on a held-out test set using metrics like accuracy, precision, recall, and **F1-score** *, as you can see in the description later. (This ensures model effectiveness)
+
+**User Stories (Dashboard Planning, Designing & Development):**
+
+* **As a project manager**, I want to define the functionalities of the user interface dashboard for interacting with the model and visualizing results. (This outlines the dashboard's purpose)
+* **As a UI/UX designer**, I want to design a user-friendly dashboard that caters to both farmers (visualizing mildew) and data scientists (viewing model performance metrics). (This ensures user-friendliness for different audiences)
+* **As a software developer**, I want to develop the user interface dashboard based on the agreed-upon functionalities and design. (This translates the design into a working interface)
+
+**User Stories (Dashboard Deployment & Release):**
+
+* **As a project manager**, I want to define a deployment plan for the user interface dashboard, ensuring secure access for authorized users. (This outlines the deployment strategy)
+* **As a project manager**, I want to develop user training materials to educate farmers on how to use the dashboard for mildew detection. (This ensures user adoption of the system)
+* **As a project manager**, I want to release the user interface dashboard to Farmy & Foods for pilot testing and user feedback. (This facilitates initial use and potential improvements)
+
+---
 ### Here's how this project translates into a compelling business case for cherry farmers
-**Problem:** Manually inspecting vast cherry orchards for mildew is time-consuming, inefficient, and prone to human error.\
+
+**Problem:** Manually inspecting vast cherry orchards for mildew is time-consuming, inefficient, and prone to human error.
 **Solution:**
 This project proposes an automated cherry leaf mildew detection system using machine learning (ML) and image analysis. By leveraging image recognition, the system can instantly analyze cherry leaf images and identify the presence of mildew.
 * **Automated Detection:** The project presents an ML-powered system that analyzes cherry leaf images for instant mildew detection. This eliminates the need for tedious manual checks, saving cherry farmers valuable time and resources.
 * **User-Friendly Interface:** A Streamlit dashboard provides a user-friendly interface for visualization and prediction. Farmers can easily upload cherry leaf images and receive instant results, helping them make informed decisions about crop management.
+
+---
 ### Benefits
+
 * **Increased Efficiency:** Automated mildew detection frees up farmers' time to focus on other critical tasks, boosting overall farm productivity.
 * **Cost-Effective Solution:** Compared to manual inspection, the proposed ML system offers a scalable and cost-effective approach to disease detection.
 * **Improved Crop Yield:** Early identification of mildew allows for timely treatment, potentially minimizing crop damage and increasing yield.
+
 ### Enhancing Efficiency and Profitability for Cherry Farmers
 An ML-powered system specifically designed for automated mildew detection in cherry leaves offers significant advantages to cherry farmers. By addressing the limitations of manual inspection, the project delivers a cost-effective and scalable solution compared to traditional methods. This translates to improved farm efficiency, potentially leading to increased crop yield and overall farm profitability.
+
+---
 ### The ML Advantage
 A machine learning model, specifically a Convolutional Neural Network (CNN), will be trained to analyze cherry leaf images and predict the presence of mildew. This model offers several advantages:
 * **Accuracy:** CNNs excel at image recognition tasks, achieving high accuracy in identifying mildew based on image features like color, texture, and leaf discoloration.
@@ -34,8 +87,13 @@ A machine learning model, specifically a Convolutional Neural Network (CNN), wil
 * **Objectivity:** Unlike manual inspection, the ML model is objective, eliminating the possibility of human error in identifying mildew.
 ### Scalability and Potential for Broader Impact
 The project doesn't stop at cherry trees. Further exploration can investigate the application of this technology to other crops facing similar disease challenges. By framing the project within this business case structure, we demonstrate the value proposition of the ML solution and its potential to address challenges faced by a wider range of farmers.
+
+---
 ### Deployment and Future Potential
-The project aims for deployment on a platform suitable for machine learning applications. Additionally, the core technology has the potential to be adapted for disease detection in other crops facing similar challenges, expanding its impact on the agricultural domain. Further enhancements could include:
+The project aims for deployment on a platform suitable for machine learning applications. Additionally, the core technology has the potential to be adapted for disease detection in other crops facing similar challenges, expanding its impact on the agricultural domain. 
+
+**Further enhancements could include:**
+
 * **Automatic Photo Uploader:** Streamlining the process by allowing direct capture and analysis of cherry leaf images through a mobile app or web interface.
 * **Advanced Machine Learning:** Exploring deeper neural networks or ensemble * learning techniques to potentially improve detection accuracy and robustness.
 * **Severity Classification:** Extending the project beyond simple detection to identify the seerity of mildew infection, guiding treatment decisions.
@@ -44,7 +102,7 @@ The project aims for deployment on a platform suitable for machine learning appl
 * **Broader Application:** The project's core technology has the potential to be adapted to detect diseases in other crops facing similar challenges. This opens doors for broader application in the agricultural domain.
 * **Continuous Improvement:** The project can be further enhanced through ongoing research and development, potentially leading to even higher accuracy and more advanced functionalities.
 
-### Project Overview
+## Project Overview
 This project tackles cherry leaf mildew detection using a combination of image analysis and machine learning. The goal is to develop a system that can accurately identify whether a cherry leaf is healthy or infected with powdery mildew, addressing the challenges faced by Farmy & Foods, a company specializing in cherry plantations. Their current manual inspection process is time-consuming and inefficient.
 
 ### Cherry Leaf Mildew Detection with Machine Learning
@@ -55,30 +113,64 @@ This project tackles cherry leaf mildew detection using a combination of image a
 * Build a machine learning model to predict mildew presence in cherry leaf images with an accuracy of **97%** (as specified by the client).
 
 ### Problem and Opportunity
+
 **Problem:** Manually inspecting cherry orchards for powdery mildew is time-consuming and inefficient.
 **Opportunity:** Develop an automated system using machine learning to analyze cherry leaf images for instant mildew detection.
+
 ### Business Requirements - Hypothesis
+
 **Client Requirements:**
-**Hypothesis 1: Visually Distinguishing Mildew:** A visual tool can effectively differentiate healthy and mildewed leaves based on visual cues like spots and discoloration.\
-**Assumption:** We hypothesize that there are significant visual differences between healthy and mildewed cherry leaves that can be captured through image analysis. These differences may include variations in color (e.g., yellowing of leaves), presence of spots or patches, and overall leaf texture.\
+**Hypothesis 1: Visually Distinguishing Mildew:** A visual tool can effectively differentiate healthy and mildewed leaves based on visual cues like spots and discoloration.
+
+**Assumption:** We hypothesize that there are significant visual differences between healthy and mildewed cherry leaves that can be captured through image analysis. These differences may include variations in color (e.g., yellowing of leaves), presence of spots or patches, and overall leaf texture.
+
 **Validation Method 1:** User testing with cherry farmers to assess the tool's usability and accuracy in identifying mildew based on visual inspection.
 * Analyze average healthy and mildewed leaf images to identify and highlight key visual discrepancies.
 * Present variability images within each class to showcase the range of appearances for both healthy and mildewed leaves.
 
-**Hypothesis 2: Machine Learning Model Effectiveness** The ML system can accurately identify mildew in cherry leaf images.\
-**Assumption:** We hypothesize that a machine learning model trained on the cherry leaf image dataset can accurately predict the presence or absence of mildew in unseen cherry leaf images.\
+**Hypothesis 2: Machine Learning Model Effectiveness** The ML system can accurately identify mildew in cherry leaf images.
+
+**Assumption:** We hypothesize that a machine learning model trained on the cherry leaf image dataset can accurately predict the presence or absence of mildew in unseen cherry leaf images.
+
 **Validation Method 1:**
-Performance metrics like accuracy, precision, recall, and F1-score calculated on a held-out test set.
+Performance metrics like accuracy, precision, recall, and F1-score* calculated on a held-out test set.
 * Split the dataset into training, validation, and test sets.
 * Train the machine learning model on the training set and evaluate its performance on the validation set to fine-tune hyperparameters.
 * Assess the model's final performance on the unseen test set using metrics like accuracy, precision, recall, and F1-score.
 
 ---
+**F1 Score:**
+The F1-score is a metric used to evaluate the performance of a machine learning model, particularly in classification tasks. It combines two other commonly used metrics, precision and recall, into a single score. 
+
+**Here's a breakdown of how it works:**
+
+* **Precision:** This measures the proportion of positive predictions that are actually correct. In the context of cherry leaf mildew detection, it would represent the percentage of images the model classified as mildewed that truly have mildew.
+* **Recall:** This measures the proportion of actual positive cases that are correctly identified by the model. In this case, it would represent the percentage of leaves with mildew that the model correctly classified as mildewed.
+
+The F1-score takes the harmonic mean of precision and recall. The harmonic mean gives more weight to lower values, so a model with a high F1-score needs to have both good precision (not classifying healthy leaves as mildewed) and good recall (not missing actual mildewed leaves).
+
+**[F1-score = 2 * (Precision * Recall) / (Precision + Recall)]**
+
+A perfect F1-score of **1** indicates the model has perfect precision and recall (it correctly classifies all cases). A score closer to **0** means the model performs poorly on both precision and recall.
+
+In the cherry leaf mildew detection project, a high F1-score would be desirable. This signifies that the CNN model is effective in both accurately identifying mildewed leaves and avoiding false positives (classifying healthy leaves as mildewed).
+
+---
 ### Mapping Business Requirements to Data Tasks 
-This section bridges the gap between the client's needs and the project's technical execution. Here, we'll explore how data visualizations and machine learning tasks directly address the client's specific requirements:\
-**Client Requirement 1:** Visual Differentiation Study Goal: Empower cherry farmers with the ability to visually identify healthy and mildewed leaves. Data Tasks: Analyze the dataset to identify key visual characteristics that differentiate healthy and mildewed leaves (e.g., color variations, presence of spots). Create visualizations such as average healthy vs. mildewed leaf comparisons, variability images showcasing the range of appearances within each class, and image montages for broader reference.\
-**Client Requirement 2:** Mildew Prediction Model.\
+This section bridges the gap between the client's needs and the project's technical execution. 
+
+**Here, we'll explore how data visualizations and machine learning tasks directly address the client's specific requirements:**
+
+**Client Requirement 1:** Visual Differentiation Study 
+
+**Goal:** Empower cherry farmers with the ability to visually identify healthy and mildewed leaves. 
+
+**Data Tasks:** Analyze the dataset to identify key visual characteristics that differentiate healthy and mildewed leaves (e.g., color variations, presence of spots). Create visualizations such as average healthy vs. mildewed leaf comparisons, variability images showcasing the range of appearances within each class, and image montages for broader reference.
+
+**Client Requirement 2:** Mildew Prediction Model.
+
 **Goal:** Develop a machine learning model that accurately predicts the presence or absence of mildew in unseen cherry leaf images.
+
 ### Data Tasks
 * Preprocess the image data (e.g., resizing, normalization) for compatibility with the machine learning model.
 * Train a machine learning model on the labeled dataset (healthy vs. mildewed).
@@ -90,19 +182,22 @@ This section bridges the gap between the client's needs and the project's techni
 * **Future Applications:** Potential for adapting the technology to detect diseases in other crops.
 
 ### Data
-**Dataset Overview**\
-The project leverages a dataset of cherry leaf images obtained from [Kaggle](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves). This dataset contains of 4208 Number of cherry leaf images, that is categorized into two classes: healthy and mildewed leaves. This classification reflects the client's concerns about potential powdery mildew impacting product quality. By training the machine learning model on these images, we aim to equip cherry farmers with a tool for early detection and improved crop management.
+**Dataset Overview**
+
+The project leverages a dataset of cherry leaf images obtained from [Kaggle](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves). This dataset contains of an input of **4208** cherry leaf images, that is categorized into two classes: **Healthy and Powdery Mildewed leaves**. 
+
+This classification reflects the client's concerns about potential powdery mildew impacting product quality. By training the machine learning model on these images, we aim to equip cherry farmers with a output tool for early detection and improved crop management.
 
 **Dataset Description in Summary**
-* 4208 cherry leaf images (50/50 split between healthy and infected)
-* Machine Learning Model CNN
+* **4208** cherry leaf images (**50/50** split between healthy and infected)
+* Machine Learning Model **CNN**
 * Quantify the time saved by farmers through automated detection compared to manual inspection. 
 * Consider potential cost savings from earlier disease identification and treatment. 
 * Highlight the potential for increased crop yield and overall farm productivity.
 
 ---
 ### Business Requirements - Method and Models
-**Visual Differentiation Study:** Develop a method to visually distinguish healthy cherry leaves from those infected with powdery mildew. This can be achieved through conventional data analysis techniques like creating average and variability images for both leaf classes and showcasing image montages.\
+**Visual Differentiation Study:** Develop a method to visually distinguish healthy cherry leaves from those infected with powdery mildew. This can be achieved through conventional data analysis techniques like creating average and variability images for both leaf classes and showcasing image montages.
 
 **Mildew Prediction Model:** Build a machine learning model to predict the presence (or absence) of powdery mildew in cherry leaf images. The target accuracy for this model is as mentioned before **97%**.
 
@@ -149,8 +244,10 @@ This requirement focuses on building a machine learning system that can automati
 **Remember:** The specific techniques and visualizations used may be adjusted based on the data exploration findings.
 
 ## Cherry Leaf Mildew Detection Dashboard: Empowering Cherry Farmers
-The project dashboard serves and delivers insights and functionality as the primary user interface for interacting with the system and visualizing results. The project dashboard serves as the central hub for cherry farmers to interact with the system, gain insights, and leverage automated mildew detection.\
+The project dashboard serves and delivers insights and functionality as the primary user interface for interacting with the system and visualizing results. The project dashboard serves as the central hub for cherry farmers to interact with the system, gain insights, and leverage automated mildew detection.
+
 ### Here's a breakdown of its functionalities
+
 **Model Performance Metrics:**
 
 This section caters to users interested in the technical aspects of the model (e.g., researchers). It provides details on the model's performance on the unseen test set, potentially including metrics like accuracy, precision, recall, and F1-score. By incorporating these functionalities, the dashboard empowers cherry farmers to not only understand mildew visually but also leverage the automated detection system for informed decision-making within their orchards. 
@@ -192,7 +289,7 @@ Looking ahead, the project's potential extends beyond the current implementation
 Overall, this project demonstrates the power of CNNs in automating disease detection tasks. By combining image analysis with machine learning, it offers a valuable solution for improving efficiency and productivity in cherry farming.
 
 ### Data Description
-The data used in this project consists of cherry leaf images obtained from [Data source link (if publicly available)]. The images are in PNG format and have a resolution of 256x256 pixels. Using a smaller image size (e.g., 100x100) might be beneficial for reducing model size and facilitating deployment on platforms with storage limitations. Large models can be pushed to GitHub using Git LFS.
+The data used in this project consists of cherry leaf images obtained from [Data source link ](https://en.wikipedia.org/wiki/Cherry_leaf_spot)]. The images are in **PNG** format and have a resolution of **256x256 pixels**. Using a smaller image size (e.g., 100x100) might be beneficial for reducing model size and facilitating deployment on platforms with storage limitations. Large models can be pushed to GitHub using Git LFS.
 
 ### Model Details
 This project utilizes a Convolutional Neural Network (CNN) model for binary classification. The model is trained to distinguish between healthy and mildewed cherry leaves based on the image features it extracts.
@@ -268,6 +365,7 @@ The Streamlit app i deployed to Heroku, and the model can be tested in this depl
 * Install required libraries (refer to the requirements.txt file).
 * Consider using a virtual environment for managing dependencies.
 
+---
 ### Run the project
 * Navigate to the project directory in your terminal.
 * Run streamlit run app.py to launch the Streamlit dashboard.
@@ -275,14 +373,17 @@ The Streamlit app i deployed to Heroku, and the model can be tested in this depl
 * Open the "jupyter_notebooks" directory.
 * Select and run the desired notebook.
 
+---
 ### Testing
 **Comprehensive Testing Ensures Accuracy:** To guarantee the reliability and functionality of the cherry leaf mildew detection project, comprehensive testing was undertaken.  Not only were all features rigorously evaluated within the Streamlit app environment, mirroring the intended user experience, but each step of the code was also manually tested in a Jupyter Notebook to validate its logic and performance. 
 
 **Additionally, a crucial aspect of the testing process involved manually testing a diverse set of cherry leaf images**, ensuring the machine learning functions accurately classified both healthy and mildew-infected leaves.
 
+---
 ### Unfixed Bugs
 During development and testing, no critical bugs were identified that would impede the core functionalities of the system. Hence, there was issues within the code that needed to be adjusted fore the packages used.
 
+---
 ### Deployment Considerations: 
 Heroku was initially considered for deployment, but limitations arose due to model size and package dependencies. For similar projects with larger requirements, consider platforms designed specifically for machine learning deployments. Initial deployment attempts were made on Heroku, but limitations were encountered due to model size and package dependencies. 
 
@@ -296,15 +397,15 @@ While Heroku support allowed a temporary increase to 600MB, it's important to no
 
 **tensorflow-cpu:** This core deep learning library from Google enables the creation, training, and deployment of machine learning models, specifically a Convolutional Neural Network (CNN) for this project. The tensorflow-cpu variant is used for CPU-based execution, while tensorflow-gpu leverages a GPU (if available) for faster computations.
 
-**streamlit:** This library simplifies the creation of interactive web applications. It's used to develop the user-friendly Streamlit dashboard that serves as the primary interface for interacting with the model and visualizing results.\
+**streamlit:** This library simplifies the creation of interactive web applications. It's used to develop the user-friendly Streamlit dashboard that serves as the primary interface for interacting with the model and visualizing results.
 
-**h5py:** This package facilitates working with Hierarchical Data Format 5 (HDF5) files, a common format for storing and managing large datasets, including images and model weights. It is used for loading and saving the trained CNN model if needed.\
+**h5py:** This package facilitates working with Hierarchical Data Format 5 (HDF5) files, a common format for storing and managing large datasets, including images and model weights. It is used for loading and saving the trained CNN model if needed.
 
-**numpy:** This fundamental library provides powerful array manipulation capabilities. It's essential for numerical computations, image preprocessing (e.g., resizing, normalization), and working with matrices in the CNN model.\
+**numpy:** This fundamental library provides powerful array manipulation capabilities. It's essential for numerical computations, image preprocessing (e.g., resizing, normalization), and working with matrices in the CNN model.
 
-**pandas:** This data analysis library offers versatile tools for working with tabular data (DataFrames). It is used for tasks like exploring and cleaning the image metadata (e.g., labels) associated with the cherry leaf dataset.\
+**pandas:** This data analysis library offers versatile tools for working with tabular data (DataFrames). It is used for tasks like exploring and cleaning the image metadata (e.g., labels) associated with the cherry leaf dataset.
 
-**matplotlib:** This visualization library is a cornerstone for creating various plots and charts. It might be used to generate the visualizations for the mildew visualizer component of the dashboard, such as comparisons between healthy and mildewed leaf images.\
+**matplotlib:** This visualization library is a cornerstone for creating various plots and charts. It might be used to generate the visualizations for the mildew visualizer component of the dashboard, such as comparisons between healthy and mildewed leaf images.
 
 **pillow (PIL Fork):** This Python Imaging Library (PIL) fork provides functionalities for image processing tasks like loading, resizing, manipulating, and saving image files in various formats (e.g., PNG, JPEG). It's used for image preprocessing before feeding them into the CNN model.
 
@@ -327,7 +428,8 @@ This project is an original creation based on turorial and bricklaying code fron
 ### Content
 **Wikipedia offered 2 links within this project:**
 
-[Cherry leaf spot](https://en.wikipedia.org/wiki/Cherry_leaf_spot)\
+[Cherry leaf spot](https://en.wikipedia.org/wiki/Cherry_leaf_spot)
+
 [List of Dataset for Machine Learning research](https://en.wikipedia.org/wiki/List_of_datasets_for_machine-learning_research)
 
 ---

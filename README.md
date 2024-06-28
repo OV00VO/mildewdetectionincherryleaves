@@ -1,10 +1,13 @@
 
 # Mildew Detection in Cherry Leaves: A Business Case for Streamlined Farming
 
+[Mildew Detection in Cherry Leaves - Deployed on Heroku](https://mildewdetectionincherryleaves-c24b4ea4a636.herokuapp.com/)
+
+[GitHub Repository for this Project](https://github.com/OV00VO/mildewdetectionincherryleaves.git)
+
+---
 ### About the Project: The Story Behind the Business Case
-Marianne McGuinness, the head of IT and Innovation at Farmy & Foods, an agricultural company, is facing a challenge. Their cherry plantations are affected by powdery mildew, a fungal disease harming various plants. Cherry crops are among their finest products, and the company is concerned about compromised quality. Currently, employees manually inspect trees, spending 30 minutes per tree, taking leaf samples to visually identify mildew. 
-If mildew is present, they apply a specific compound (taking 1 minute). 
-With thousands of trees across multiple farms, this manual process is not scalable due to the time it takes. To save time, the IT team proposes an ML system that instantly detects mildew in cherry leaf images. A similar manual process exists for other crops. If successful, this project can be replicated for other crops. The dataset consists of cherry leaf images provided by Farmy & Foods, taken from their crops.
+Marianne McGuinness, the head of IT and Innovation at Farmy & Foods, an agricultural company, is facing a challenge. Their cherry plantations are affected by powdery mildew, a fungal disease harming various plants. Cherry crops are among their finest products, and the company is concerned about compromised quality. Currently, employees manually inspect trees, spending 30 minutes per tree, taking leaf samples to visually identify mildew. If mildew is present, they apply a specific compound (taking 1 minute). With thousands of trees across multiple farms, this manual process is not scalable due to the time it takes. To save time, the IT team proposes an ML system that instantly detects mildew in cherry leaf images. A similar manual process exists for other crops. If successful, this project can be replicated for other crops. The dataset consists of cherry leaf images provided by Farmy & Foods, taken from their crops.
 ## Challenge
 ### Tackling Cherry Leaf Mildew with Machine Learning
 Cherry leaf mildew, a fungal disease, poses a significant threat to cherry orchards, potentially reducing crop quality. Traditionally, farmers rely on manual inspection of vast orchards, a time-consuming and error-prone process. This inefficiency is particularly felt by companies like Farmy & Foods, which manage thousands of trees across multiple farms, spending 30 minutes per tree on visual inspection through leaf samples. This project tackles this critical challenge by presenting a solution that utilizes image analysis and machine learning (ML) for automated cherry leaf mildew detection. A user-friendly Streamlit dashboard serves as the interface for visualization and prediction, empowering cherry farmers with efficient crop management tools. This ML-powered approach offers significant benefits compared to traditional manual inspection, paving the way for improved farm efficiency and broader impact within the agricultural domain.

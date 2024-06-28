@@ -243,7 +243,7 @@ This requirement focuses on building a machine learning system that can automati
 
 **Remember:** The specific techniques and visualizations used may be adjusted based on the data exploration findings.
 
-## Cherry Leaf Mildew Detection Dashboard: Empowering Cherry Farmers
+## Mildew Detection in Cherry Leaves Dashboard: Empowering Cherry Farmers
 The project dashboard serves and delivers insights and functionality as the primary user interface for interacting with the system and visualizing results. The project dashboard serves as the central hub for cherry farmers to interact with the system, gain insights, and leverage automated mildew detection.
 
 ### Here's a breakdown of its functionalities
